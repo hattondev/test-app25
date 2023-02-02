@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "test-app25"
+  description: "testing this now"
+  annotations:
+    github.com/project-slug: hattondev/test-app25
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: "test-app25"
+  links:
+    - url: https://test-app25.apps.wwtlab.net
+      title: Website
+      icon: Website
+    - url: https://app.harness.io/ng/#/account/KDANFuIkSvK5VMJ5Stni7g/cd/orgs/default/projects/PS_10015914/gitops/applications/ad54321-test-app25?agentId=prodcluster
+      title: ArgoCD/Harness
+      icon: cloud
+  tags:
+    - golang
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "tylerhatton"
